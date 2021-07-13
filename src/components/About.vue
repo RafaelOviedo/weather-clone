@@ -1,8 +1,8 @@
 <template>
     <div class="aboutComponent">
         <p>About component</p>
-    </div> </template
->;
+    </div>
+</template>
 
 <script>
 export default {
