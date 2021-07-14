@@ -1,17 +1,15 @@
 <template>
-    <div class="aboutComponent">
-        <p class="aboutTitle">About component</p>
-    </div>
+    <h1 class="homeTitle">Home Component</h1>
 </template>
 
 <script>
 export default {
-    name: "About",
+    name: "Home",
 };
 </script>
 
 <style scoped>
-.aboutTitle {
+.homeTitle {
     position: absolute;
     top: 20%;
     left: 40%;
