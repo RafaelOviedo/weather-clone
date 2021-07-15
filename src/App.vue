@@ -42,6 +42,7 @@ export default {
     width: 100%;
     height: 10vh;
     background: #c70039;
+    z-index: 10;
 }
 
 .navLogo {
