@@ -12,6 +12,13 @@
                     class="weatherIcon"
                     src="http://openweathermap.org/img/wn/{{city.img}}@2x.png"
                 />
+                <router-link
+                    :to="{ name: 'CardDetail', params: { id: city.id } }"
+                    class="moreInfo"
+                    :cities="cities"
+                >
+                    More info</router-link
+                >
             </li>
         </ul>
     </div>
@@ -69,7 +76,8 @@ export default {
         "button button button button"
         "title  title  title  title"
         "min    min    max    max"
-        "image   image   image   image";
+        "image   image   image   image"
+        "info    info    info    info";
     list-style-type: none;
     margin-top: 2%;
     width: 20%;
@@ -101,13 +109,12 @@ export default {
 }
 
 .weatherIcon {
-    transform: translate(50%);
+    transform: translate(47%);
     grid-area: image;
 }
-</style>
 
-display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 1fr
-1fr 1fr 1fr 1fr; grid-template-areas: "button button button button" "title title
-title title" "props1 props1 props2 props2" "info1 info1 info2 info2" "image
-image image image"; background: white; width: 320px; height: 230px;
-border-radius: 15px; margin-top: 70px; position: relative; top: 15%; }
+.moreInfo {
+    grid-area: info;
+    text-decoration: none;
+}
+</style>
