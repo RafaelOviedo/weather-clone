@@ -12,7 +12,7 @@
                 <p class="cardMaxTemp">Max temp: {{ city.max }}</p>
                 <img
                     class="weatherIcon"
-                    src="http://openweathermap.org/img/wn/{{city.img}}@2x.png"
+                    :src="`http://openweathermap.org/img/wn/${city.img}@2x.png`"
                 />
                 <br />
                 <p class="aditionalInfo">
@@ -94,7 +94,7 @@ export default {
     margin-top: 2%;
     margin-right: 5%;
     width: 20%;
-    height: 65%;
+    height: 82.5%;
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -103,11 +103,11 @@ export default {
     transform: translate(569%, -2%);
     grid-area: button;
     width: 15%;
-    height: 120%;
+    height: 70%;
     border-radius: 0 10px 0 5px;
     border: none;
     cursor: pointer;
-    background: red;
+    background: crimson;
     color: white;
 }
 
@@ -124,7 +124,11 @@ export default {
 }
 
 .weatherIcon {
-    transform: translate(47%);
+    width: 25%;
+    height: 100%;
+    border-radius: 50%;
+    background: lightgray;
+    transform: translate(150%);
     grid-area: image;
 }
 
